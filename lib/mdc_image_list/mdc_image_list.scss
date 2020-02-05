@@ -1,5 +1,2 @@
 @use "./mixins";
-
-.host {
-	@include mixins.core-styles;
-}
+@include mixins.core-styles;
