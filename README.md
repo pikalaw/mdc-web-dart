@@ -10,5 +10,3 @@ If you are looking for Material-Design components for AngularDart,
 look in [Angular Components](https://github.com/dart-lang/angular_components.git)
 first.
 If you can't find what you need there, then try this package.
-
-## mdc-image-list
