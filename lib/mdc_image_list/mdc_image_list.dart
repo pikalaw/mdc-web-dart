@@ -13,3 +13,19 @@ import 'package:angular/angular.dart';
 )
 class MdcImageList {
 }
+
+@Component(
+  selector: 'mdc-image-list-item',
+  templateUrl: 'mdc_image_list_item.html',
+  styleUrls: ['mdc_image_list.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+)
+class MdcImageListItem {
+	@Input()
+	String src;
+}
+
+const List<dynamic> mdcImageListDirectives = [
+	MdcImageList,
+	MdcImageListItem,
+];
