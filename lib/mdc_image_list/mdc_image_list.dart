@@ -35,7 +35,7 @@
 ///
 /// `my_tag_component.scss`:
 /// ```scss
-/// @use "package:mdc-web/mdc_image_list";
+/// @use "package:mdc_web/mdc_image_list";
 /// ```
 library mdc_image_list;
 
