@@ -22,11 +22,14 @@
 /// `my_tag_component.html`:
 /// ```html
 /// <ul mdcImageList>
-///   <li>
-///     <img src="..." *aspectContained/>
-///     <label *supported>Text label</label>
+///   <li mdcImageListItem>
+///     <div mdcImageListImageAspectContained>
+///       <img src="favicon.png" mdcImageListImage/>
+///     </div>
+///     <div mdcImageListSupporting>
+///       <label mdcImageListLabel>My favicon!</label>
+///     </div>
 ///   </li>
-///   ...
 /// </ul>
 /// ```
 ///
@@ -43,30 +46,30 @@ class MdcImageListDirective {
   @HostBinding('class.mdc-image-list') static const class_ = true;
 }
 
-@Directive(selector: '[mdcImageList] li')
+@Directive(selector: '[mdcImageListItem]')
 class MdcImageListItemDirective {
   @HostBinding('class.mdc-image-list__item') static const class_ = true;
 }
 
-@Directive(selector: '[mdcImageList] [aspectContained]')
+@Directive(selector: '[mdcImageListImageAspectContained]')
 class MdcImageListImageContainerDirective {
   @HostBinding('class.mdc-image-list__image-aspect-container')
   static const class_ = true;
 }
 
-@Directive(selector: '[mdcImageList] img')
+@Directive(selector: '[mdcImageListImage]')
 class MdcImageListImageDirective {
   @HostBinding('class.mdc-image-list__image')
   static const class_ = true;
 }
 
-@Directive(selector: '[mdcImageList] [supported]')
+@Directive(selector: '[mdcImageListSupporting]')
 class MdcImageListSupportingDirective {
   @HostBinding('class.mdc-image-list__supporting')
   static const class_ = true;
 }
 
-@Directive(selector: '[mdcImageList] label')
+@Directive(selector: '[mdcImageListLabel]')
 class MdcImageListLabelDirective {
   @HostBinding('class.mdc-image-list__label')
   static const class_ = true;
