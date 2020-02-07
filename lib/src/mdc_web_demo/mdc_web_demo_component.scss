@@ -1,1 +1,11 @@
 @use "package:mdc_web/mdc_image_list";
+
+.my-regular-list {
+  @include mdc_image_list.standard-columns(5);
+  max-width: 600px;
+}
+
+.my-masonry-list {
+  @include mdc_image_list.masonry-columns(5);
+  max-width: 600px;
+}
