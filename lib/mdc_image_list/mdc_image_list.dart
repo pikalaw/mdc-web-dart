@@ -32,6 +32,7 @@
 ///
 /// my_app_component.scss:
 /// ```css
+/// @use "package:mdc_web/mdc_image_list";
 /// .my-image-list {
 ///    // Set how many columns per row.
 ///    @include image-list.standard-columns(5);
